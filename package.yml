@@ -1,0 +1,16 @@
+package: cloud.lazycat.app.i-notebook
+version: 0.8.0
+name: i-notebook
+description: "一款支持自部署的个人知识写作应用，助你更高效地组织和管理笔记"
+min_os_version: 1.5.0
+homepage: https://tangyuanlabs.com/
+author: aidenzou
+
+locales:
+  zh:
+    name: "i-notebook"
+    description: "支持自部署的个人知识写作与笔记管理应用"
+  en:
+    name: "i-notebook"
+    description: "A self-hosted personal knowledge writing and note management application"
+

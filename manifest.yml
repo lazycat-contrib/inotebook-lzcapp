@@ -1,10 +1,3 @@
-lzc-sdk-version: "0.1"
-name: i-notebook
-package: cloud.lazycat.app.i-notebook
-version: 0.8.0
-description: 一款支持自部署的个人知识写作应用，助你更高效地组织和管理笔记。
-homepage: https://tangyuanlabs.com/
-author: aidenzou
 application:
   subdomain: i-notebook
   background_task: true
@@ -12,9 +5,19 @@ application:
     - /
   routes:
     - /=http://i-notebook:3000
+  injects:
+    - id: unlock-code-autofill
+      when:
+        - /
+      do:
+        - src: builtin://simple-inject-password
+          params:
+            password: lazycat
+            allowPasswordOnly: true
 
 services:
   i-notebook:
+    # upstream: aidenzou/i-notebook:0.8.0
     image: docker.1ms.run/aidenzou/i-notebook:0.8.0
     environment:
       - DATABASE_URL=file:/appdata/db/notebook.sqlite

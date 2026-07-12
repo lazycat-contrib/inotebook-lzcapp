@@ -14,11 +14,10 @@ application:
           params:
             password: lazycat
             allowPasswordOnly: true
-
 services:
   i-notebook:
-    # upstream: aidenzou/i-notebook:0.8.0
-    image: docker.1ms.run/aidenzou/i-notebook:0.8.0
+    # upstream: aidenzou/i-notebook:0.16.0
+    image: registry.lazycat.cloud/czyt/aidenzou/i-notebook:fae10a5cc00219ea
     environment:
       - DATABASE_URL=file:/appdata/db/notebook.sqlite
       - AUTH_UNLOCKCODE=lazycat

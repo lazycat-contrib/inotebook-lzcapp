@@ -3,7 +3,7 @@ name: i-notebook
 package: cloud.lazycat.app.i-notebook
 version: 0.8.0
 description: 一款支持自部署的个人知识写作应用，助你更高效地组织和管理笔记。
-homepage: https://hub.docker.com/r/aidenzou/i-notebook
+homepage: https://tangyuanlabs.com/
 author: aidenzou
 application:
   subdomain: i-notebook

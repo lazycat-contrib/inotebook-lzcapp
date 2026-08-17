@@ -1,5 +1,5 @@
 package: cloud.lazycat.app.i-notebook
-version: 0.16.0
+version: 0.17.0
 name: i-notebook
 description: "一款支持自部署的个人知识写作应用，助你更高效地组织和管理笔记"
 min_os_version: 1.5.0

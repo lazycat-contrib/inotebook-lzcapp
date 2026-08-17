@@ -16,8 +16,8 @@ application:
             allowPasswordOnly: true
 services:
   i-notebook:
-    # upstream: aidenzou/i-notebook:0.16.0
-    image: registry.lazycat.cloud/czyt/aidenzou/i-notebook:fae10a5cc00219ea
+    # upstream: aidenzou/i-notebook:0.17.0
+    image: registry.lazycat.cloud/czyt/aidenzou/i-notebook:d8fec3947ec8bbec
     environment:
       - DATABASE_URL=file:/appdata/db/notebook.sqlite
       - AUTH_UNLOCKCODE=lazycat
